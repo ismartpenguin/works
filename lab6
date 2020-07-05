@@ -1,0 +1,36 @@
+<html>
+	<body>
+		<input type=button value=Начало id="buttonstart" onclick = OpenForm()>
+		<form onsubmit="Submit()" id="buttonform"></form>
+		<script>
+			function OpenForm() {
+				buttonstart.onclick = null;
+				buttonform.innerHTML +=  "Один или два? " + "<br>";
+				buttonform.innerHTML += "<input type='checkbox'> 1"+"<br>";
+				buttonform.innerHTML += "<input type='checkbox'> 2"+"<br>";
+				buttonform.innerHTML += "<input type='text'>"+"<br>";
+				buttonform.innerHTML += "<input type='submit'>";
+			};
+
+			function Submit() {
+				if (document.forms[0].elements[0].checked) {
+					alert(document.forms[0].elements[0].checked)
+					} else {
+						alert("Пусто")
+					};
+
+				if (document.forms[0].elements[1].checked) {
+					alert(document.forms[0].elements[1].checked)
+					} else {
+						alert("Пусто")
+					};
+				
+				if (document.forms[0].elements[2].value) {
+					alert(document.forms[0].elements[2].value)
+					} else {
+						alert("Пусто")
+					};
+			};
+		</script>
+	</body>
+</html>
