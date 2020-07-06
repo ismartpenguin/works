@@ -1,0 +1,296 @@
+<<html>
+<head>
+	<style>
+		#background {
+			background-color: #EEE;
+			padding: 1px;
+			float: left;
+    		margin-left: 270px;
+		}
+		tr {
+			width: 100%;
+		}
+		td {
+			width: 55px;
+			height: 55px;
+			border: 1.5px solid #cdcdcd;
+		}
+		table{
+			max-width:100%;
+			border-collapse: collapse;
+		}
+		input[type= button] {
+			padding: 8px;
+		}
+		td input {
+			width: 100%;
+			height: 100%;
+			padding: 0em;
+			border: none;
+			text-align: center;
+			font-size: 3em;
+			color: #666;
+			background-color: #ADD8E6;
+		}
+		td{
+			background-color: #008B8B;
+		}
+		.number{
+			color:white;
+			background-color: #3CB371;
+		}
+
+	</style>
+</head>
+
+<body>
+<div id=background>
+	<table>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input class="number"value="2" disabled></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><input class="number"value="1" disabled></td>
+			<td><input onblur="UnFocusQuestion(0)" onchange="CheckAnswer(0)" onfocus="this.select(),FocusQuestion(0)" maxlength="1" val="" type="text" class="Question0"  ></td>
+			<td><input onblur="UnFocusQuestion(0)" onchange="CheckAnswer(0)" onfocus="this.select(),FocusQuestion(0)" maxlength="1" val="" type="text" class="Question0" ></td>
+			<td><input onblur="UnFocusQuestion(0),UnFocusQuestion(1)" onchange="CheckAnswer(0),CheckAnswer(1)" onfocus="this.select(),FocusQuestion(0),FocusQuestion(1)" maxlength="1" val="" type="text" class="Question0 Question1" ></td>
+			<td><input onblur="UnFocusQuestion(0)" onchange="CheckAnswer(0)" onfocus="this.select(),FocusQuestion(0)" maxlength="1" val="" type="text" class="Question0" ></td>
+			<td><input onblur="UnFocusQuestion(0)" onchange="CheckAnswer(0)" onfocus="this.select(),FocusQuestion(0)" maxlength="1" val="" type="text" class="Question0" ></td>
+			<td><input onblur="UnFocusQuestion(0)" onchange="CheckAnswer(0)" onfocus="this.select(),FocusQuestion(0)" maxlength="1" val="" type="text" class="Question0" ></td>
+			<td><input onblur="UnFocusQuestion(0)" onchange="CheckAnswer(0)" onfocus="this.select(),FocusQuestion(0)" maxlength="1" val="" type="text" class="Question0" ></td>
+			<td><input onblur="UnFocusQuestion(0)" onchange="CheckAnswer(0)" onfocus="this.select(),FocusQuestion(0)" maxlength="1" val="" type="text" class="Question0" ></td>
+			<td><input onblur="UnFocusQuestion(0)" onchange="CheckAnswer(0)" onfocus="this.select(),FocusQuestion(0)" maxlength="1" val="" type="text" class="Question0" ></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><input class="number"value="4" disabled></td>
+			<td><input onblur="UnFocusQuestion(1)" onchange="CheckAnswer(1)" onfocus="this.select(),FocusQuestion(1)" maxlength="1" val="" type="text" class="Question1"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input class="number"value="5" disabled></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input class="number"value="6" disabled></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><input class="number"value="3" disabled></td>
+			<td><input onblur="UnFocusQuestion(2)" onchange="CheckAnswer(2)" onfocus="this.select(),FocusQuestion(2)" maxlength="1" val="" type="text" class="Question2"  ></td>
+			<td><input onblur="UnFocusQuestion(2),UnFocusQuestion(3)" onchange="CheckAnswer(2),CheckAnswer(3)" onfocus="this.select(),FocusQuestion(2),FocusQuestion(3)" maxlength="1" val="" type="text" class="Question2 Question3"  ></td>
+			<td><input onblur="UnFocusQuestion(2),UnFocusQuestion(1)" onchange="CheckAnswer(2),CheckAnswer(1)" onfocus="this.select(),FocusQuestion(2),FocusQuestion(1)" maxlength="1" val="" type="text" class="Question2 Question1" ></td>
+			<td><input onblur="UnFocusQuestion(2)" onchange="CheckAnswer(2)" onfocus="this.select(),FocusQuestion(2)" maxlength="1" val="" type="text" class="Question2" ></td>
+			<td><input onblur="UnFocusQuestion(2)" onchange="CheckAnswer(2)" onfocus="this.select(),FocusQuestion(2)" maxlength="1" val="" type="text" class="Question2" ></td>
+			<td><input onblur="UnFocusQuestion(2)" onchange="CheckAnswer(2)" onfocus="this.select(),FocusQuestion(2)" maxlength="1" val="" type="text" class="Question2" ></td>
+			<td><input onblur="UnFocusQuestion(2),UnFocusQuestion(4)" onchange="CheckAnswer(2),CheckAnswer(4)" onfocus="this.select(),FocusQuestion(2),FocusQuestion(4)" maxlength="1" val="" type="text" class="Question2 Question4"  ></td>
+			<td><input onblur="UnFocusQuestion(2)" onchange="CheckAnswer(2)" onfocus="this.select(),FocusQuestion(2)" maxlength="1" val="" type="text" class="Question2" ></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(5)" onchange="CheckAnswer(5)" onfocus="this.select(),FocusQuestion(5)" maxlength="1" val="" type="text" class="Question5"  ></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(3)" onchange="CheckAnswer(3)" onfocus="this.select(),FocusQuestion(3)" maxlength="1" val="" type="text" class="Question3"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(4)" onchange="CheckAnswer(4)" onfocus="this.select(),FocusQuestion(4)" maxlength="1" val="" type="text" class="Question4"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(5)" onchange="CheckAnswer(5)" onfocus="this.select(),FocusQuestion(5)" maxlength="1" val="" type="text" class="Question5"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(3)" onchange="CheckAnswer(3)" onfocus="this.select(),FocusQuestion(3)" maxlength="1" val="" type="text" class="Question3"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(4)" onchange="CheckAnswer(4)" onfocus="this.select(),FocusQuestion(4)" maxlength="1" val="" type="text" class="Question4"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(5)" onchange="CheckAnswer(5)" onfocus="this.select(),FocusQuestion(5)" maxlength="1" val="" type="text" class="Question5"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(3)" onchange="CheckAnswer(3)" onfocus="this.select(),FocusQuestion(3)" maxlength="1" val="" type="text" class="Question3"></td>
+			<td></td>
+			<td><input class="number"value="8" disabled></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(4)" onchange="CheckAnswer(4)" onfocus="this.select(),FocusQuestion(4)" maxlength="1" val="" type="text" class="Question4"></td>
+			<td></td>
+			<td><input class="number"value="9" disabled></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(5)" onchange="CheckAnswer(5)" onfocus="this.select(),FocusQuestion(5)" maxlength="1" val="" type="text" class="Question5"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><input class="number"value="7" disabled></td>
+			<td><input onblur="UnFocusQuestion(6)" onchange="CheckAnswer(6)" onfocus="this.select(),FocusQuestion(6)" maxlength="1" val="" type="text" class="Question6"  ></td>
+			<td><input onblur="UnFocusQuestion(6),UnFocusQuestion(3)" onchange="CheckAnswer(6),CheckAnswer(3)" onfocus="this.select(),FocusQuestion(6),FocusQuestion(3)" maxlength="1" val="" type="text" class="Question3 Question6"></td>
+			<td><input onblur="UnFocusQuestion(6)" onchange="CheckAnswer(6)" onfocus="this.select(),FocusQuestion(6)" maxlength="1" val="" type="text" class="Question6"></td>
+			<td><input onblur="UnFocusQuestion(6),UnFocusQuestion(7)" onchange="CheckAnswer(6),CheckAnswer(7)" onfocus="this.select(),FocusQuestion(6),FocusQuestion(7)" maxlength="1" val="" type="text" class="Question6 Question7" ></td>
+			<td><input onblur="UnFocusQuestion(6)" onchange="CheckAnswer(6)" onfocus="this.select(),FocusQuestion(6)" maxlength="1" val="" type="text" class="Question6"></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(4)" onchange="CheckAnswer(4)" onfocus="this.select(),FocusQuestion(4)" maxlength="1" val="" type="text" class="Question4"></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(8)" onchange="CheckAnswer(8)" onfocus="this.select(),FocusQuestion(8)" maxlength="1" val="" type="text" class="Question8" ></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(5)" onchange="CheckAnswer(5)" onfocus="this.select(),FocusQuestion(5)" maxlength="1" val="" type="text" class="Question5"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(3)" onchange="CheckAnswer(3)" onfocus="this.select(),FocusQuestion(3)" maxlength="1" val="" type="text" class="Question3"></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(7)" onchange="CheckAnswer(7)" onfocus="this.select(),FocusQuestion(7)" maxlength="1" val="" type="text" class="Question7"></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(8)" onchange="CheckAnswer(8)" onfocus="this.select(),FocusQuestion(8)" maxlength="1" val="" type="text" class="Question8"></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(5)" onchange="CheckAnswer(5)" onfocus="this.select(),FocusQuestion(5)" maxlength="1" val="" type="text" class="Question5"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input class="number"value="10" disabled></td>
+			<td><input onblur="UnFocusQuestion(9),UnFocusQuestion(7)" onchange="CheckAnswer(9),CheckAnswer(7)" onfocus="this.select(),FocusQuestion(9),FocusQuestion(7)" maxlength="1" val="" type="text" class="Question9 Question7"  ></td>
+			<td><input onblur="UnFocusQuestion(9)" onchange="CheckAnswer(9)" onfocus="this.select(),FocusQuestion(9)" maxlength="1" val="" type="text" class="Question9" ></td>
+			<td><input onblur="UnFocusQuestion(9)" onchange="CheckAnswer(9)" onfocus="this.select(),FocusQuestion(9)" maxlength="1" val="" type="text" class="Question9" ></td>
+			<td><input onblur="UnFocusQuestion(9)" onchange="CheckAnswer(9)" onfocus="this.select(),FocusQuestion(9)" maxlength="1" val="" type="text" class="Question9" ></td>
+			<td><input onblur="UnFocusQuestion(9)" onchange="CheckAnswer(9)" onfocus="this.select(),FocusQuestion(9)" maxlength="1" val="" type="text" class="Question9" ></td>
+			<td><input onblur="UnFocusQuestion(9),UnFocusQuestion(8)" onchange="CheckAnswer(9),CheckAnswer(8)" onfocus="this.select(),FocusQuestion(9),FocusQuestion(8)" maxlength="1" val="" type="text" class="Question9 Question8" ></td>
+			<td><input onblur="UnFocusQuestion(9)" onchange="CheckAnswer(9)" onfocus="this.select(),FocusQuestion(9)" maxlength="1" val="" type="text" class="Question9" ></td>
+			<td><input onblur="UnFocusQuestion(9),UnFocusQuestion(5)" onchange="CheckAnswer(9),CheckAnswer(5)" onfocus="this.select(),FocusQuestion(9),FocusQuestion(5)" maxlength="1" val="" type="text" class="Question9 Question5" ></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(7)" onchange="CheckAnswer(7)" onfocus="this.select(),FocusQuestion(7)" maxlength="1" val="" type="text" class="Question7" ></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(8)" onchange="CheckAnswer(8)" onfocus="this.select(),FocusQuestion(8)" maxlength="1" val="" type="text" class="Question8" ></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(7)" onchange="CheckAnswer(7)" onfocus="this.select(),FocusQuestion(7)" maxlength="1" val="" type="text" class="Question7" ></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(8)" onchange="CheckAnswer(8)" onfocus="this.select(),FocusQuestion(8)" maxlength="1" val="" type="text" class="Question8" ></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(7)" onchange="CheckAnswer(7)" onfocus="this.select(),FocusQuestion(7)" maxlength="1" val="" type="text" class="Question7" ></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td><input onblur="UnFocusQuestion(8)" onchange="CheckAnswer(8)" onfocus="this.select(),FocusQuestion(8)" maxlength="1" val="" type="text" class="Question8" ></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+		</tr>
+	</table>
+</div>
+<script>
+	let TrueAnswers = ["боярышник", "яма", "аванпост", "вапити", "сабля", "арктика", "атлет", "елочка", "канада", "облепиха" ];
+	let RegExp = [
+		/боярышник/i,
+		/яма/i,
+		/аванпост/i,
+		/вапити/i,
+		/сабля/i,
+		/арктика/i,
+		/атлет/i,
+		/елочка/i,
+		/канада/i,
+		/облепиха/i
+	]
+	function CheckAnswer(QuestionNumber){
+		let Answer="";
+		let Questions = document.getElementsByClassName("Question"+[QuestionNumber]);
+    	for (i=0; i<Questions.length; i++) {
+    	    Answer += Questions[i].value;
+		}
+
+		if (Answer.length == Questions.length){
+			if(RegExp[QuestionNumber].test(Answer)){
+				for (i=0; i<Questions.length; i++) {
+    		    	Questions[i].style.backgroundColor = '#00FF7F';
+				}
+    		} else {
+				for (i=0; i<Questions.length; i++) {
+    		    	Questions[i].style.backgroundColor = '#FA8072';
+				}
+			}
+		}
+	}
+</script>
+</body>
+</html>
