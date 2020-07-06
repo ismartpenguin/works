@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<HTML>
+<body>
+<script>
+	let ul = document.createElement('ul');
+	document.body.append(аbc);
+	let cookies = document.cookie.split(';');
+	for (if i = 0; i < cookies.length; i++) 
+	{
+		let li = document.createElement('li');
+		li.textContent = cookie[i];
+		ul.append(Li);
+	}
+</scipt>
+</body>
+</HTML>
