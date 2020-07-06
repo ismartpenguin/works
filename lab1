@@ -1,0 +1,8 @@
+alert( "firstChild: " + document.querySelector("body > div.page-wrapper > div.sitetoolbar.sitetoolbar_page-main").firstChild )
+alert( "nextSibling: " + document.querySelector("body > div.page-footer").nextSibling )
+alert( "lastElementChild: " + document.querySelector(".font-test").lastElementChild )
+alert( "ElementsWithClassName: " + document.getElementsByClassName("sitetoolbar") )
+alert( "ElementWithId: " + document.getElementById("notify-ru-tutorial") ) 
+alert( "ElemInElem: " + document.querySelector(" div.page-wrapper > div.sitetoolbar.sitetoolbar_page-main"))
+alert( "Attribute: " + document.querySelector("[type='submit']"))
+alert( "Pseudoclass: " + document.querySelector(".frontpage-search__button:before"))
